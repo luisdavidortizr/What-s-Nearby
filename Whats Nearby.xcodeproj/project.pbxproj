@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C24E8BA2AA56F940076CC27 /* ARMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C24E8B92AA56F940076CC27 /* ARMath.swift */; };
 		6C4CA91D2AA10795009AFFDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4CA91C2AA10795009AFFDC /* AppDelegate.swift */; };
 		6C4CA91F2AA10795009AFFDC /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C4CA91E2AA10795009AFFDC /* Scene.sks */; };
 		6C4CA9212AA10795009AFFDC /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4CA9202AA10795009AFFDC /* Scene.swift */; };
@@ -17,6 +18,7 @@
 		6C4CA9352AA10796009AFFDC /* What_s_NearbyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4CA9342AA10796009AFFDC /* What_s_NearbyTests.swift */; };
 		6C4CA93F2AA10796009AFFDC /* What_s_NearbyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4CA93E2AA10796009AFFDC /* What_s_NearbyUITests.swift */; };
 		6C4CA9412AA10796009AFFDC /* What_s_NearbyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4CA9402AA10796009AFFDC /* What_s_NearbyUITestsLaunchTests.swift */; };
+		6C4CA9502AA10BB1009AFFDC /* SwiftJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4CA94F2AA10BB1009AFFDC /* SwiftJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6C4CA9192AA10795009AFFDC /* What's Nearby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What's Nearby.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C24E8B92AA56F940076CC27 /* ARMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMath.swift; sourceTree = "<group>"; };
+		6C4CA9192AA10795009AFFDC /* Whats Nearby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whats Nearby.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C4CA91C2AA10795009AFFDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C4CA91E2AA10795009AFFDC /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
 		6C4CA9202AA10795009AFFDC /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
@@ -45,11 +48,12 @@
 		6C4CA9252AA10795009AFFDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C4CA9272AA10796009AFFDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C4CA92A2AA10796009AFFDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6C4CA9302AA10796009AFFDC /* What's NearbyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "What's NearbyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C4CA9302AA10796009AFFDC /* Whats NearbyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whats NearbyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C4CA9342AA10796009AFFDC /* What_s_NearbyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = What_s_NearbyTests.swift; sourceTree = "<group>"; };
-		6C4CA93A2AA10796009AFFDC /* What's NearbyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "What's NearbyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C4CA93A2AA10796009AFFDC /* Whats NearbyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whats NearbyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C4CA93E2AA10796009AFFDC /* What_s_NearbyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = What_s_NearbyUITests.swift; sourceTree = "<group>"; };
 		6C4CA9402AA10796009AFFDC /* What_s_NearbyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = What_s_NearbyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6C4CA94F2AA10BB1009AFFDC /* SwiftJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C24E8B82AA56F630076CC27 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6C4CA94F2AA10BB1009AFFDC /* SwiftJSON.swift */,
+				6C24E8B92AA56F940076CC27 /* ARMath.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		6C4CA9102AA10795009AFFDC = {
 			isa = PBXGroup;
 			children = (
@@ -90,9 +103,9 @@
 		6C4CA91A2AA10795009AFFDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C4CA9192AA10795009AFFDC /* What's Nearby.app */,
-				6C4CA9302AA10796009AFFDC /* What's NearbyTests.xctest */,
-				6C4CA93A2AA10796009AFFDC /* What's NearbyUITests.xctest */,
+				6C4CA9192AA10795009AFFDC /* Whats Nearby.app */,
+				6C4CA9302AA10796009AFFDC /* Whats NearbyTests.xctest */,
+				6C4CA93A2AA10796009AFFDC /* Whats NearbyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +113,7 @@
 		6C4CA91B2AA10795009AFFDC /* What's Nearby */ = {
 			isa = PBXGroup;
 			children = (
+				6C24E8B82AA56F630076CC27 /* Core */,
 				6C4CA91C2AA10795009AFFDC /* AppDelegate.swift */,
 				6C4CA91E2AA10795009AFFDC /* Scene.sks */,
 				6C4CA9202AA10795009AFFDC /* Scene.swift */,
@@ -131,9 +145,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6C4CA9182AA10795009AFFDC /* What's Nearby */ = {
+		6C4CA9182AA10795009AFFDC /* Whats Nearby */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C4CA9442AA10796009AFFDC /* Build configuration list for PBXNativeTarget "What's Nearby" */;
+			buildConfigurationList = 6C4CA9442AA10796009AFFDC /* Build configuration list for PBXNativeTarget "Whats Nearby" */;
 			buildPhases = (
 				6C4CA9152AA10795009AFFDC /* Sources */,
 				6C4CA9162AA10795009AFFDC /* Frameworks */,
@@ -143,14 +157,14 @@
 			);
 			dependencies = (
 			);
-			name = "What's Nearby";
+			name = "Whats Nearby";
 			productName = "What's Nearby";
-			productReference = 6C4CA9192AA10795009AFFDC /* What's Nearby.app */;
+			productReference = 6C4CA9192AA10795009AFFDC /* Whats Nearby.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6C4CA92F2AA10796009AFFDC /* What's NearbyTests */ = {
+		6C4CA92F2AA10796009AFFDC /* Whats NearbyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C4CA9472AA10796009AFFDC /* Build configuration list for PBXNativeTarget "What's NearbyTests" */;
+			buildConfigurationList = 6C4CA9472AA10796009AFFDC /* Build configuration list for PBXNativeTarget "Whats NearbyTests" */;
 			buildPhases = (
 				6C4CA92C2AA10796009AFFDC /* Sources */,
 				6C4CA92D2AA10796009AFFDC /* Frameworks */,
@@ -161,14 +175,14 @@
 			dependencies = (
 				6C4CA9322AA10796009AFFDC /* PBXTargetDependency */,
 			);
-			name = "What's NearbyTests";
+			name = "Whats NearbyTests";
 			productName = "What's NearbyTests";
-			productReference = 6C4CA9302AA10796009AFFDC /* What's NearbyTests.xctest */;
+			productReference = 6C4CA9302AA10796009AFFDC /* Whats NearbyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6C4CA9392AA10796009AFFDC /* What's NearbyUITests */ = {
+		6C4CA9392AA10796009AFFDC /* Whats NearbyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C4CA94A2AA10796009AFFDC /* Build configuration list for PBXNativeTarget "What's NearbyUITests" */;
+			buildConfigurationList = 6C4CA94A2AA10796009AFFDC /* Build configuration list for PBXNativeTarget "Whats NearbyUITests" */;
 			buildPhases = (
 				6C4CA9362AA10796009AFFDC /* Sources */,
 				6C4CA9372AA10796009AFFDC /* Frameworks */,
@@ -179,9 +193,9 @@
 			dependencies = (
 				6C4CA93C2AA10796009AFFDC /* PBXTargetDependency */,
 			);
-			name = "What's NearbyUITests";
+			name = "Whats NearbyUITests";
 			productName = "What's NearbyUITests";
-			productReference = 6C4CA93A2AA10796009AFFDC /* What's NearbyUITests.xctest */;
+			productReference = 6C4CA93A2AA10796009AFFDC /* Whats NearbyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6C4CA9142AA10795009AFFDC /* Build configuration list for PBXProject "What's Nearby" */;
+			buildConfigurationList = 6C4CA9142AA10795009AFFDC /* Build configuration list for PBXProject "Whats Nearby" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,9 +234,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6C4CA9182AA10795009AFFDC /* What's Nearby */,
-				6C4CA92F2AA10796009AFFDC /* What's NearbyTests */,
-				6C4CA9392AA10796009AFFDC /* What's NearbyUITests */,
+				6C4CA9182AA10795009AFFDC /* Whats Nearby */,
+				6C4CA92F2AA10796009AFFDC /* Whats NearbyTests */,
+				6C4CA9392AA10796009AFFDC /* Whats NearbyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C24E8BA2AA56F940076CC27 /* ARMath.swift in Sources */,
 				6C4CA9232AA10795009AFFDC /* ViewController.swift in Sources */,
+				6C4CA9502AA10BB1009AFFDC /* SwiftJSON.swift in Sources */,
 				6C4CA9212AA10795009AFFDC /* Scene.swift in Sources */,
 				6C4CA91D2AA10795009AFFDC /* AppDelegate.swift in Sources */,
 			);
@@ -288,12 +304,12 @@
 /* Begin PBXTargetDependency section */
 		6C4CA9322AA10796009AFFDC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6C4CA9182AA10795009AFFDC /* What's Nearby */;
+			target = 6C4CA9182AA10795009AFFDC /* Whats Nearby */;
 			targetProxy = 6C4CA9312AA10796009AFFDC /* PBXContainerItemProxy */;
 		};
 		6C4CA93C2AA10796009AFFDC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6C4CA9182AA10795009AFFDC /* What's Nearby */;
+			target = 6C4CA9182AA10795009AFFDC /* Whats Nearby */;
 			targetProxy = 6C4CA93B2AA10796009AFFDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -368,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -441,14 +457,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T49Y266FCP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app will use the camera to show nearby places using Augmented Reality (AR)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app will use your location to find nearby places";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,14 +489,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T49Y266FCP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app will use the camera to show nearby places using Augmented Reality (AR)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app will use your location to find nearby places";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -508,7 +528,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/What's Nearby.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/What's Nearby";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whats Nearby.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Whats Nearby";
 			};
 			name = Debug;
 		};
@@ -528,7 +548,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/What's Nearby.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/What's Nearby";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whats Nearby.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Whats Nearby";
 			};
 			name = Release;
 		};
@@ -571,7 +591,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6C4CA9142AA10795009AFFDC /* Build configuration list for PBXProject "What's Nearby" */ = {
+		6C4CA9142AA10795009AFFDC /* Build configuration list for PBXProject "Whats Nearby" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C4CA9422AA10796009AFFDC /* Debug */,
@@ -580,7 +600,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C4CA9442AA10796009AFFDC /* Build configuration list for PBXNativeTarget "What's Nearby" */ = {
+		6C4CA9442AA10796009AFFDC /* Build configuration list for PBXNativeTarget "Whats Nearby" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C4CA9452AA10796009AFFDC /* Debug */,
@@ -589,7 +609,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C4CA9472AA10796009AFFDC /* Build configuration list for PBXNativeTarget "What's NearbyTests" */ = {
+		6C4CA9472AA10796009AFFDC /* Build configuration list for PBXNativeTarget "Whats NearbyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C4CA9482AA10796009AFFDC /* Debug */,
@@ -598,7 +618,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C4CA94A2AA10796009AFFDC /* Build configuration list for PBXNativeTarget "What's NearbyUITests" */ = {
+		6C4CA94A2AA10796009AFFDC /* Build configuration list for PBXNativeTarget "Whats NearbyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C4CA94B2AA10796009AFFDC /* Debug */,
