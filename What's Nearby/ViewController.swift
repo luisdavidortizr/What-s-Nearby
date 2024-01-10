@@ -107,13 +107,13 @@ class ViewController: UIViewController {
             
             // Posicionar el ancla y darle un identificador para localizarlo en escena
             var translation = matrix_identity_float4x4
-            translation.columns.3.z = -(distance / 500)
+            translation.columns.3.z = -ARMath.clamp(value:distance / 1000, lower: 0.5, upper: 4.0)
             
             let transform = simd_mul(rotation2, translation)
             
             let anchor = ARAnchor(transform: transform)
             sceneView.session.add(anchor: anchor)
-            sites[anchor.identifier] = "\(page["title"].string ?? "Unknown Place") - \(distance)m"
+            sites[anchor.identifier] = "\(page["title"].string ?? "Unknown Place") - \(Int(distance))m"
         }
     }
 }

@@ -30,4 +30,8 @@ class ARMath {
         
         return rad2deg(atanRad)
     }
+    
+    static func clamp<T: Comparable>(value: T, lower: T, upper: T) -> T {
+        return min(max(value, lower), upper)
+    }
 }
